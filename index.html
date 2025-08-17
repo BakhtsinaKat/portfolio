@@ -40,18 +40,23 @@
       height: 500px;
     }
 
-    @media (max-width: 768px) {
+   @media (max-width: 768px) {
   .grid {
-    display: block; /* вместо flex */
+    display: flex;
+    flex-direction: column; /* принудительно колонка */
+    align-items: center;    /* центрировать по ширине */
   }
 
   .slider-box {
-    max-width: 100%;  /* занимать всю ширину экрана */
-    height: auto;     /* подстраиваться по содержимому */
-    margin-bottom: 30px; /* отступы между слайдерами */
+    flex: none !important;   /* отключаем flex-grow/shrink */
+    width: 100%;             /* ширина во всю строку */
+    max-width: 100%;         /* без ограничений */
+    height: auto;            /* чтобы не растягивался */
+    margin-bottom: 20px;     /* отступ между слайдерами */
   }
 }
-    
+
+
   </style>
 </head>
 <body>
