@@ -41,10 +41,16 @@
     }
 
     @media (max-width: 768px) {
-      .slider-box {
-        height: 1300px;
-        
-      }
+  .grid {
+    display: block; /* вместо flex */
+  }
+
+  .slider-box {
+    max-width: 100%;  /* занимать всю ширину экрана */
+    height: auto;     /* подстраиваться по содержимому */
+    margin-bottom: 30px; /* отступы между слайдерами */
+  }
+}
     }
   </style>
 </head>
