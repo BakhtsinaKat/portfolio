@@ -6,68 +6,18 @@
 
   <title>My Work</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      color: #111;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 60px;
-      font-size: 32px;
-    }
-
-    p {
-      color: #666;
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .slider-box {
-      flex: 1 1 300px;
-      max-width: 400px;
-      height: 500px;
-    }
-
-   @media (max-width: 768px) {
-  .grid {
-    display: flex;
-    flex-direction: column; /* принудительно колонка */
-    align-items: center;    /* центрировать по ширине */
-  }
-
-  .slider-box {
-    flex: none !important;   /* отключаем flex-grow/shrink */
-    max-width: 80%;             /* ширина во всю строку */
- 
-    height: auto;            /* чтобы не растягивался */
-    margin-bottom: 30px;     /* отступ между слайдерами */
-  }
-}
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Hi, I'm Katya Bakhtsina!</h1>
-  <p> I'm a retoucher. I work with photographers, beauty professionals, bloggers & brands.
-Scroll down to see my work!
-!</p>
+  <div class="greeting">
+    <h1>Hi, I'm Katya Bakhtsina!</h1>
+    <p> I'm a retoucher. I work with photographers, beauty professionals, bloggers & brands.
+        Scroll down to see my work!
+    </p>
+  </div>
+
 
   <div class="grid">
     <div class="slider-box" id="slider1"></div>
